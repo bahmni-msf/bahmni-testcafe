@@ -1,0 +1,27 @@
+{
+  "name": "bahmnitestcafe",
+  "version": "1.0.0",
+  "description": "bahmniModuleTestcafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
+    "test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true --disable-page-caching",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone 11 ./tests -s takeOnFails=true --disable-page-caching",
+    "test:safari": "testcafe safari ./tests -s takeOnFails=true --disable-page-caching"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/testcafe": "^4.2.0"
+  },
+  "devDependencies": {
+    "mockdate": "^3.0.2",
+    "testcafe": "^1.8.8",
+    "xpath-to-css": "^1.0.5"
+  }
+}
